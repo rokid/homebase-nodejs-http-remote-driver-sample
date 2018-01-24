@@ -5,4 +5,5 @@
 1. 安装 Node.js
 2. open shell and `cd path/to/sample-driver`
 3. run `npm install`
-4. run `npm sart`
+4. run `npm start`
+
