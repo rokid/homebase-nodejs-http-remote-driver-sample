@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express();
 const bodyParser = require('body-parser')
+const ip = require('ip');
 
 app.use(bodyParser.json());
 
@@ -44,4 +45,4 @@ app.post('/execute', (req, res) => {
   })
 });
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+app.listen(3000, () => console.log('Example Homebase Driver started.\nEndpoint: http://' + ip.address() + ':3000!'))
